@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation.xml"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.moetaz.mazaady.presentation.ui.main.MainFragment"
+        android:label="MazadRequestFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_mazadDetailsFragment"
+            app:destination="@id/mazadDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mazadDetailsFragment"
+        android:name="com.moetaz.mazaady.presentation.ui.detail.MazadDetailsFragment"
+        android:label="fragment_mazad_details"
+        tools:layout="@layout/fragment_mazad_details" />
+
+</navigation>
